@@ -9,7 +9,9 @@ $color__background-button-hover: #111;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__background_selection: mix( $color__background-body, $color__background-button, 75% ); // lighten( salmon, 22.5% ); // lighten( #0999d4, 48% );
-
+$color__green: #7c9a61;
+$color__white: #fff;
+$color__yellow: #f3b800;
 // Text
 $color__text-main: #111;
 $color__text-light: #767676;
@@ -19,7 +21,7 @@ $color__text-input: #666;
 $color__text-input-focus: #111;
 
 // Links
-$color__link: #0073aa;
+$color__link: #040404;
 $color__link-visited: #0073aa;
 $color__link-hover: darken( $color__link, 10% );
 

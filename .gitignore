@@ -1,5 +1,7 @@
+.idea/
 wp-config.php
 wp-content/backups/
 wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
+wp-content/themes/twentynineteen/node_modules/
