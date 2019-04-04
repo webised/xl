@@ -4,6 +4,8 @@
 
 	display: block;
 	margin-top: #{0.25 * $size__spacing-unit};
+	text-align: center;
+	background-color: $color__yellow;
 
 	body.page & {
 		display: block;

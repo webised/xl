@@ -19,7 +19,7 @@
 
 	@include media(tablet) {
 		margin: 0;
-		padding: 3rem 0;
+		padding: 0;
 
 		&.featured-image {
 			min-height: 100vh;
@@ -47,6 +47,7 @@
 
 	@include media(tablet) {
 		margin-bottom: 0;
+		text-aling: center;
 	}
 
 	.custom-logo-link {

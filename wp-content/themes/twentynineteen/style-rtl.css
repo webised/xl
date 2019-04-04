@@ -2743,6 +2743,8 @@ a:focus {
 .main-navigation {
   display: block;
   margin-top: 0.25rem;
+  text-align: center;
+  background-color: #f3b800;
   /* Un-style buttons */
   /*
 	 * Sub-menu styles
@@ -3718,7 +3720,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .site-header {
     margin: 0;
-    padding: 3rem 0;
+    padding: 0;
   }
   .site-header.featured-image {
     min-height: 100vh;
@@ -3734,6 +3736,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .site-logo {
     margin-bottom: 0;
+    text-aling: center;
   }
 }
 
@@ -3743,13 +3746,6 @@ body.page .main-navigation {
 
 .site-logo .custom-logo-link:hover, .site-logo .custom-logo-link:active, .site-logo .custom-logo-link:focus {
   box-shadow: 0 0 0 2px black;
-}
-
-@media only screen and (min-width: 768px) {
-  .site-logo .custom-logo-link {
-    width: 64px;
-    height: 64px;
-  }
 }
 
 .site-title {
@@ -4470,12 +4466,12 @@ body.page .main-navigation {
   text-decoration: none;
 }
 
-#section-6 {
+#section-1 {
   background-color: #7c9a61;
   color: #fff;
 }
 
-#section-19 {
+#section-3 {
   background-color: #f3b800;
   color: #fff;
 }

@@ -7,7 +7,33 @@
  */
 
 get_header();
+?>
+    <section id="primary" class="content-area">
+		<main id="main" class="site-main">
 
+		<?php
+		if ( have_posts() ) {
+
+			// Load posts loop.
+			while ( have_posts() ) {
+				the_post();
+				get_template_part( 'template-parts/content/content' );
+			}
+
+			// Previous/next page navigation.
+			twentynineteen_the_posts_navigation();
+
+		} else {
+
+			// If no content, include the "No posts found" template.
+			get_template_part( 'template-parts/content/content', 'none' );
+
+		}
+		?>
+
+		</main><!-- .site-main -->
+	</section><!-- .content-area -->
+<?php	
 $menu_items = wp_get_nav_menu_items('top-menu');
 
 if ($menu_items) {
@@ -20,16 +46,17 @@ if ($menu_items) {
     $wp_query = new WP_Query(array('post_type' => 'page', 'post__in' => $page_id, 'orderby' => array('menu_order' => 'DESC')));
 
     if ($wp_query->have_posts()) {
-
+        $i = 1;
         while ($wp_query->have_posts()) {
             ?>
-          <section id="section-<?php the_ID(); ?>">
+          <section id="section-<?php echo $i; ?>">
               <?php
               $wp_query->the_post();
               get_template_part('template-parts/content/content', 'page');
               ?>
           </section>
             <?php
+			$i++;
         }
 
         /* Restore original Post Data */
