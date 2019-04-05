@@ -2509,16 +2509,6 @@ h6 {
   margin: 1rem 0;
 }
 
-h1:not(.site-title):before,
-h2:before {
-  background: #767676;
-  content: "\020";
-  display: block;
-  height: 2px;
-  margin: 1rem 0;
-  width: 1em;
-}
-
 hr {
   background-color: #767676;
   border: 0;
@@ -2743,8 +2733,9 @@ a:focus {
 .main-navigation {
   display: block;
   margin-top: 0.25rem;
+  padding: 0.5rem 0;
   text-align: center;
-  background-color: #f3b800;
+  background-color: #FFAE1E;
   /* Un-style buttons */
   /*
 	 * Sub-menu styles
@@ -2811,7 +2802,9 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu > li > a {
-  font-weight: 700;
+  font-weight: 100;
+  font-size: 0.8rem;
+  text-transform: uppercase;
   color: #040404;
   margin-left: 0.5rem;
 }
@@ -3736,7 +3729,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .site-logo {
     margin-bottom: 0;
-    text-aling: center;
+    text-align: center;
   }
 }
 
@@ -3779,7 +3772,7 @@ body.page .main-navigation {
 
 .site-title + .main-navigation {
   display: block;
-  background-color: #f3b800;
+  background-color: #FFAE1E;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4149,21 +4142,14 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .entry .entry-header {
-    margin: calc(3 * 1rem) calc(10% + 60px) 1rem;
+    margin: 0 calc(10% + 60px) 1rem;
   }
 }
 
 .entry .entry-title {
+  text-align: center;
   margin: 0;
-}
-
-.entry .entry-title:before {
-  background: #767676;
-  content: "\020";
-  display: block;
-  height: 2px;
-  margin: 1rem 0;
-  width: 1em;
+  padding: 2rem 0 1.5rem 0;
 }
 
 .entry .entry-title a {
@@ -4212,6 +4198,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-meta {
+  display: none;
   margin: 1rem 0;
 }
 
@@ -4441,15 +4428,6 @@ body.page .main-navigation {
   display: inline;
 }
 
-.author-bio .author-title:before {
-  background: #767676;
-  content: "\020";
-  display: block;
-  height: 2px;
-  margin: 1rem 0;
-  width: 1em;
-}
-
 .author-bio .author-description {
   display: inline;
   color: #767676;
@@ -4472,8 +4450,63 @@ body.page .main-navigation {
 }
 
 #section-3 {
-  background-color: #f3b800;
+  background-color: #FFAE1E;
   color: #fff;
+}
+
+.post-7 h1, .home .entry-footer {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .metaslider-33 {
+    width: 1400px;
+  }
+}
+
+.entry-title {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.home .post-9 .entry-title {
+  background-image: url("./img/apropos.jpg");
+  color: #7c9a61;
+}
+
+.home .post-11 .entry-title {
+  background-image: url("./img/pourqui-title.jpg");
+  color: #fff;
+}
+
+.home .post-15 .entry-title {
+  background-image: url("./img/enpratiquetitle.jpg");
+  color: #FFAE1E;
+}
+
+.home .post-17 .entry-title {
+  background-image: url("./img/solutions.jpg");
+  color: #fff;
+}
+
+.home .post-19 .entry-title {
+  background-image: url("./img/contact.jpg");
+  color: #7c9a61;
+  font-size: 0.1rem;
+}
+
+.post-19 .entry-header {
+  margin: 0;
+  background-color: #7c9a61;
+  padding-top: 1rem;
+}
+
+.post-11 .entry-content {
+  display: flex;
+}
+
+.post-11 .entry-content .entry-text {
+  padding: 2rem;
 }
 
 /*--------------------------------------------------------------
@@ -4538,15 +4571,6 @@ body.page .main-navigation {
 
 .comments-area .comments-title-wrap .comments-title {
   margin: 0;
-}
-
-.comments-area .comments-title-wrap .comments-title:before {
-  background: #767676;
-  content: "\020";
-  display: block;
-  height: 2px;
-  margin: 1rem 0;
-  width: 1em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -5161,7 +5185,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .entry .entry-content > *,
   .entry .entry-summary > * {
-    margin: 32px 0;
+    margin: 0;
   }
 }
 

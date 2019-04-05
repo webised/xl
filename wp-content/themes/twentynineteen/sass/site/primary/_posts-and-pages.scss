@@ -38,14 +38,14 @@
 		position: relative;
 
 		@include media(tablet) {
-			margin: calc(3 * #{ $size__spacing-unit}) $size__site-margins $size__spacing-unit;
+			margin: 0 $size__site-margins $size__spacing-unit;
 		}
 	}
 
 	.entry-title {
-
-		@include post-section-dash;
+        text-align: center;
 		margin: 0;
+		padding: 2rem 0 1.5rem 0;
 
 		a {
 			color: inherit;
@@ -92,6 +92,7 @@
 	}
 
 	.entry-meta {
+	    display: none;
 		margin: $size__spacing-unit 0;
 	}
 
@@ -302,11 +303,59 @@
 		}
 	}
 }
-#section-1 {
+#a-propos {
 	background-color: $color__green;
 	color: $color__white;
 }
-#section-3 {
+#en-pratique{
 	background-color: $color__yellow;
 	color: $color__white;
 }
+.post-7 h1, .home .entry-footer,  {
+	display: none;
+}
+.metaslider-33 {
+  @include media(tablet) {
+    width: 1400px;
+  }
+}
+
+.entry-title { 	
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  
+  .home .post-9 &{
+	 background-image: url('./img/apropos.jpg'); 
+	 color: $color__green;
+  }	 
+  .home .post-11 &{
+	 background-image: url('./img/pourqui-title.jpg'); 
+	 color: $color__background-input;
+  }
+  .home .post-15 &{
+	 background-image: url('./img/enpratiquetitle.jpg'); 
+	 color: $color__yellow;
+  }	 
+  .home .post-17 &{
+	 background-image: url('./img/solutions.jpg'); 
+	 color: $color__background-input;
+  }	
+  .home .post-19 &{
+	 background-image: url('./img/contact.jpg'); 
+	 color: $color__green;
+	 font-size: 0.1rem;
+  }  
+}  
+.post-19 {
+	.entry-header {
+	   margin: 0;
+	   background-color: $color__green;
+	   padding-top: 1rem;
+	}	
+}
+.post-11 .entry-content {
+	display: flex;
+		.entry-text {
+		  padding: 2rem;
+		}
+}	

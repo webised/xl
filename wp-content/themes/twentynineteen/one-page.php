@@ -41,18 +41,24 @@ if ($menu_items) {
     foreach ($menu_items as $menu_item) {
         $page_id[] = $menu_item->object_id;
     }
-
+ 
     global $wp_query;
     $wp_query = new WP_Query(array('post_type' => 'page', 'post__in' => $page_id, 'orderby' => array('menu_order' => 'DESC')));
 
     if ($wp_query->have_posts()) {
         $i = 1;
         while ($wp_query->have_posts()) {
+			$wp_query->the_post();
+		    $title = get_the_title();
             ?>
-          <section id="section-<?php echo $i; ?>">
+          <section id="<?php echo sanitize_title($title); ?>">
               <?php
-              $wp_query->the_post();
-              get_template_part('template-parts/content/content', 'page');
+              
+              if( get_the_ID() == 11 ) {
+				  get_template_part( 'template-parts/content/content-img' );
+				} else {
+				  get_template_part( 'template-parts/content/content' );
+				}	
               ?>
           </section>
             <?php
