@@ -611,8 +611,8 @@ body .wp-block[data-align="full"] {
 /** === Base Typography === */
 body {
   font-size: 22px;
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-  line-height: 1.8;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
   color: #111;
 }
 
@@ -626,7 +626,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
@@ -741,7 +741,7 @@ a:focus {
 
 figcaption,
 .gallery-caption {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.71111em;
   line-height: 1.6;
   color: #767676;
@@ -758,14 +758,14 @@ figcaption,
 }
 
 .editor-post-title__block .editor-post-title__input {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.8125em;
   font-weight: 700;
 }
 
 /** === Default Appender === */
 .editor-default-block-appender .editor-default-block-appender__content {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
 }
 
@@ -776,7 +776,7 @@ figcaption,
 
 /** === Paragraph === */
 .wp-block-paragraph.has-drop-cap:not(:focus)::first-letter {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3.375em;
   line-height: 1;
   font-weight: bold;
@@ -785,13 +785,13 @@ figcaption,
 
 /** === Table === */
 .wp-block-table {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /** === Cover === */
 .wp-block-cover h2,
 .wp-block-cover .wp-block-cover-text {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6875em;
   font-weight: bold;
   line-height: 1.4;
@@ -885,7 +885,7 @@ figcaption,
 /** === Button === */
 .wp-block-button .wp-block-button__link {
   line-height: 1.8;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.88889em;
   font-weight: bold;
 }
@@ -932,7 +932,7 @@ figcaption,
 .wp-block-quote cite,
 .wp-block-quote footer,
 .wp-block-quote .wp-block-quote__citation {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.71111em;
   line-height: 1.6;
   color: #767676;
@@ -1014,7 +1014,7 @@ figcaption,
 .wp-block[data-type="core/pullquote"] .wp-block-pullquote__citation,
 .wp-block[data-type="core/pullquote"][data-align="left"] .wp-block-pullquote__citation,
 .wp-block[data-type="core/pullquote"][data-align="right"] .wp-block-pullquote__citation {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.71111em;
   line-height: 1.6;
   text-transform: none;
@@ -1061,7 +1061,7 @@ figcaption,
 
 /** === File === */
 .wp-block-file {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .wp-block-file .wp-block-file__textlink {
@@ -1148,7 +1148,7 @@ ul.wp-block-archives li,
 .wp-block-categories li,
 .wp-block-latest-posts li {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: calc(22px * 1.125);
   font-weight: bold;
   line-height: 1.2;
@@ -1184,7 +1184,7 @@ ul.wp-block-archives li ul,
 }
 
 .wp-block-categories ul ul > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -1217,7 +1217,7 @@ ul.wp-block-archives li ul,
 
 /** === Latest Comments === */
 .wp-block-latest-comments .wp-block-latest-comments__comment-meta {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
@@ -1240,7 +1240,7 @@ ul.wp-block-archives li ul,
 .wp-caption dd {
   color: #767676;
   font-size: 0.71111em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
@@ -1259,7 +1259,7 @@ ul.wp-block-archives li ul,
 }
 
 .wp-block-freeform blockquote cite {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.71111em;
   font-style: normal;
   line-height: 1.6;

@@ -8,7 +8,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	color: $color__text-main;
 	@include font-family( $font__body );
-	font-weight: 400;
+	font-weight: 100;
 	font-size: 1em;
 	line-height: $font__line-height-body;
 	margin: 0;

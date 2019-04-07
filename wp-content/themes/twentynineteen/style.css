@@ -2212,10 +2212,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #111;
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
   font-size: 1em;
-  line-height: 1.8;
+  line-height: 1.3;
   margin: 0;
   text-rendering: optimizeLegibility;
 }
@@ -2226,9 +2226,9 @@ select,
 optgroup,
 textarea {
   color: #111;
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.3;
   text-rendering: optimizeLegibility;
 }
 
@@ -2258,7 +2258,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .main-navigation,
@@ -2286,7 +2286,7 @@ h6 {
 }
 
 .page-title {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .site-branding,
@@ -2413,13 +2413,13 @@ i {
 blockquote cite {
   font-size: 0.71111em;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 pre {
   font-size: 0.88889em;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  line-height: 1.8;
+  line-height: 1.3;
   overflow: auto;
 }
 
@@ -2533,7 +2533,7 @@ ol {
 }
 
 li {
-  line-height: 1.8;
+  line-height: 1.3;
 }
 
 li > ul,
@@ -2577,7 +2577,7 @@ table {
   margin: 0 0 1rem;
   border-collapse: collapse;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 table td,
@@ -2599,7 +2599,7 @@ input[type="submit"] {
   border-radius: 5px;
   box-sizing: border-box;
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.88889em;
   font-weight: 700;
   line-height: 1.2;
@@ -2764,7 +2764,7 @@ body.page .main-navigation {
   border: none;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
@@ -3104,14 +3104,14 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -3207,7 +3207,7 @@ body.page .main-navigation {
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu .sub-menu > li > a::before,
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu .sub-menu > li > a::before,
 .main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -3553,7 +3553,7 @@ body.page .main-navigation {
 .comment-navigation .nav-next {
   min-width: 50%;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
@@ -4483,6 +4483,7 @@ body.page .main-navigation {
 .home .post-11 .entry-title {
   background-image: url("./img/pourqui-title.jpg");
   color: #fff;
+  background-position: 0;
 }
 
 .home .post-15 .entry-title {
@@ -4513,6 +4514,14 @@ body.page .main-navigation {
 
 .post-11 .entry-content .entry-text {
   padding: 2rem;
+}
+
+.post-7 header {
+  display: none;
+}
+
+.page.entry {
+  padding: 3rem 0 6rem 0;
 }
 
 /*--------------------------------------------------------------
@@ -4658,7 +4667,7 @@ body.page .main-navigation {
 .comment-list .pingback .comment-body,
 .comment-list .trackback .comment-body {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.71111em;
   font-weight: 500;
   margin-top: 1rem;
@@ -4677,7 +4686,7 @@ body.page .main-navigation {
 .comment-list .pingback .comment-body .comment-edit-link,
 .comment-list .trackback .comment-body .comment-edit-link {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 
@@ -4893,7 +4902,7 @@ body.page .main-navigation {
 
 .comment-form .comment-notes,
 .comment-form label {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.71111em;
   color: #767676;
 }
@@ -5100,7 +5109,7 @@ body.page .main-navigation {
 .widget_recent_entries ul li,
 .widget_rss ul li {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: calc(22px * 1.125);
   font-weight: 700;
   line-height: 1.2;
@@ -5127,14 +5136,14 @@ body.page .main-navigation {
 .widget_recent_comments ul ul > li > a::before,
 .widget_recent_entries ul ul > li > a::before,
 .widget_rss ul ul > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
 }
 
 .widget_tag_cloud .tagcloud {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
@@ -5172,20 +5181,6 @@ body.page .main-navigation {
 .entry .entry-summary > * {
   margin: 32px 0;
   max-width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  .entry .entry-content > *,
-  .entry .entry-summary > * {
-    max-width: calc(8 * (100vw / 12) - 28px);
-  }
-}
-
-@media only screen and (min-width: 1168px) {
-  .entry .entry-content > *,
-  .entry .entry-summary > * {
-    max-width: calc(6 * (100vw / 12) - 28px);
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -5377,7 +5372,7 @@ body.page .main-navigation {
   transition: background 150ms ease-in-out;
   border: none;
   font-size: 0.88889em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.2;
   box-sizing: border-box;
   font-weight: bold;
@@ -5453,7 +5448,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-categories li,
 .entry .entry-content .wp-block-latest-posts li {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: calc(22px * 1.125);
   font-weight: bold;
   line-height: 1.2;
@@ -5493,7 +5488,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-categories ul > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -5524,13 +5519,13 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-verse {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   line-height: 1.8;
 }
 
 .entry .entry-content .has-drop-cap:not(:focus):first-letter {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3.375em;
   line-height: 1;
   font-weight: bold;
@@ -5572,7 +5567,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-pullquote cite {
   display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   text-transform: none;
   color: #767676;
@@ -5790,7 +5785,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-cover .wp-block-cover-image-text,
 .entry .entry-content .wp-block-cover .wp-block-cover-text,
 .entry .entry-content .wp-block-cover h2 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6875em;
   font-weight: bold;
   line-height: 1.25;
@@ -5882,7 +5877,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption,
 .entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption {
   font-size: 0.71111em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
@@ -5969,7 +5964,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-file {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .entry .entry-content .wp-block-file .wp-block-file__button {
@@ -5979,7 +5974,7 @@ body.page .main-navigation {
   border-radius: 5px;
   background: #0073aa;
   font-size: 22px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.2;
   text-decoration: none;
   font-weight: bold;
@@ -6049,7 +6044,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
@@ -6257,7 +6252,7 @@ svg {
 .wp-caption-text {
   color: #767676;
   font-size: 0.71111em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
@@ -6354,7 +6349,7 @@ svg {
 .gallery-caption {
   display: block;
   font-size: 0.71111em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;

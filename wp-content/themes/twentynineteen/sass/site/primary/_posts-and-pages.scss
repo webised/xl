@@ -331,6 +331,7 @@
   .home .post-11 &{
 	 background-image: url('./img/pourqui-title.jpg'); 
 	 color: $color__background-input;
+	 background-position: 0;
   }
   .home .post-15 &{
 	 background-image: url('./img/enpratiquetitle.jpg'); 
@@ -344,7 +345,7 @@
 	 background-image: url('./img/contact.jpg'); 
 	 color: $color__green;
 	 font-size: 0.1rem;
-  }  
+  }   
 }  
 .post-19 {
 	.entry-header {
@@ -358,4 +359,10 @@
 		.entry-text {
 		  padding: 2rem;
 		}
+}	
+.post-7 header {
+	display: none;
+}
+.page.entry {
+	padding: 3rem 0 6rem 0;
 }	
