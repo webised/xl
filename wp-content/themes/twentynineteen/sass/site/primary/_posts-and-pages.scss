@@ -317,7 +317,9 @@
     width: 1400px;
   }
 }
-
+.entry-content {
+	position: relative;
+}
 .entry-title { 	
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -452,4 +454,15 @@
 .site-info {
 	background-color: #4AA45A;
 	padding: 2rem 0;
+}	
+.go-top {
+	display: block;
+    background-image: url(./img/fleche.jpg);
+    background-position: 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 10%;
+    width: 49px;
+    height: 49px;
+	bottom: 10%;
 }	
