@@ -2205,7 +2205,7 @@ template {
 
 /* Typography */
 html {
-  font-size: 22px;
+  font-size: 13px;
 }
 
 body {
@@ -2951,7 +2951,7 @@ body.page .main-navigation {
 
 .main-navigation .sub-menu > li > .menu-item-link-return {
   width: 100%;
-  font-size: 22px;
+  font-size: 13px;
   font-weight: normal;
   text-align: right;
 }
@@ -4494,12 +4494,22 @@ body.page .main-navigation {
   background-image: url("./img/contact.jpg");
   color: #7c9a61;
   font-size: 0.1rem;
+  padding: 2.5rem 0;
+  height: 57px;
 }
 
 .post-19 .entry-header {
   margin: 0;
   background-color: #7c9a61;
   padding-top: 1rem;
+}
+
+.post-19 textarea {
+  width: 40%;
+}
+
+.post-19 .wpcf7-submit {
+  background-color: #7c9a61;
 }
 
 .post-11 .entry-content {
@@ -4514,8 +4524,40 @@ body.page .main-navigation {
   display: none;
 }
 
+.post-9 {
+  margin: 0 15%;
+}
+
+.post-9 h4 {
+  padding: 1rem 0;
+}
+
 .page.entry {
   padding: 3rem 0 6rem 0;
+}
+
+.page.entry.post-7 {
+  padding: 0;
+}
+
+.page.entry.post-11 {
+  padding: 0;
+}
+
+.en-pratique-list li {
+  display: inline-block;
+}
+
+.top-footer {
+  background-image: url("./img/footer.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-color: #E2E4E1;
+  height: 189px;
+}
+
+.site-info {
+  background-color: #4AA45A;
 }
 
 /*--------------------------------------------------------------
@@ -4614,7 +4656,7 @@ body.page .main-navigation {
 
 #respond > small {
   display: block;
-  font-size: 22px;
+  font-size: 13px;
   position: absolute;
   right: calc(1rem + 100%);
   top: calc(-3.5 * 1rem);
@@ -4671,7 +4713,7 @@ body.page .main-navigation {
 .comment-list .pingback .comment-body a:not(.comment-edit-link),
 .comment-list .trackback .comment-body a:not(.comment-edit-link) {
   font-weight: bold;
-  font-size: 19.55556px;
+  font-size: 11.55556px;
   line-height: 1.5;
   padding-left: 0.5rem;
   display: block;
@@ -5018,14 +5060,12 @@ body.page .main-navigation {
 ## Footer
 --------------------------------------------------------------*/
 /* Site footer */
-#colophon .widget-area,
-#colophon .site-info {
+#colophon .widget-area {
   margin: calc(2 * 1rem) 1rem;
 }
 
 @media only screen and (min-width: 768px) {
-  #colophon .widget-area,
-  #colophon .site-info {
+  #colophon .widget-area {
     margin: calc(3 * 1rem) calc(10% + 60px);
   }
 }
@@ -5104,7 +5144,7 @@ body.page .main-navigation {
 .widget_rss ul li {
   color: #767676;
   font-family: "Montserrat", sans-serif;
-  font-size: calc(22px * 1.125);
+  font-size: calc(13px * 1.125);
   font-weight: 700;
   line-height: 1.2;
   margin-top: 0.5rem;
@@ -5437,7 +5477,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-latest-posts li {
   color: #767676;
   font-family: "Montserrat", sans-serif;
-  font-size: calc(22px * 1.125);
+  font-size: calc(13px * 1.125);
   font-weight: bold;
   line-height: 1.2;
   padding-bottom: 0.75rem;
@@ -5508,7 +5548,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-verse {
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
+  font-size: 13px;
   line-height: 1.8;
 }
 
@@ -5961,7 +6001,7 @@ body.page .main-navigation {
   border: none;
   border-radius: 5px;
   background: #0073aa;
-  font-size: 22px;
+  font-size: 13px;
   font-family: "Montserrat", sans-serif;
   line-height: 1.2;
   text-decoration: none;
@@ -5974,7 +6014,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 1168px) {
   .entry .entry-content .wp-block-file .wp-block-file__button {
-    font-size: 22px;
+    font-size: 13px;
     padding: 0.875rem 1.5rem;
   }
 }

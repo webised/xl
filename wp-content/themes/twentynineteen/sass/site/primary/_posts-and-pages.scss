@@ -345,6 +345,8 @@
 	 background-image: url('./img/contact.jpg'); 
 	 color: $color__green;
 	 font-size: 0.1rem;
+	 padding: 2.5rem 0;
+     height: 57px;
   }   
 }  
 .post-19 {
@@ -353,6 +355,12 @@
 	   background-color: $color__green;
 	   padding-top: 1rem;
 	}	
+	textarea {
+		width: 40%;
+	}
+	.wpcf7-submit {
+		background-color: #7c9a61;
+	}
 }
 .post-11 .entry-content {
 	display: flex;
@@ -363,6 +371,32 @@
 .post-7 header {
 	display: none;
 }
+.post-9 {
+	margin: 0 15%;
+	h4 {
+		padding: 1rem 0;	
+	}	
+}
 .page.entry {
 	padding: 3rem 0 6rem 0;
+	&.post-7 {
+		padding: 0;
+	}
+	&.post-11 {
+		padding: 0;
+	}
+}	
+.en-pratique-list li {
+	display:inline-block;
+}	
+.top-footer {
+	background-image: url('./img/footer.jpg');
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-color:#E2E4E1;
+	height: 189px;
+}	
+.site-info {
+	background-color: #4AA45A;
+	padding: 2rem 0;
 }	
