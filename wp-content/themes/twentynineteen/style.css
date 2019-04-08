@@ -3737,6 +3737,7 @@ body.page .main-navigation {
   top: 20px;
   width: 100%;
   overflow: hidden;
+  z-index: 1000;
 }
 
 @media only screen and (min-width: 768px) {

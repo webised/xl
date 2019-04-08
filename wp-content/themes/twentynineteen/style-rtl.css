@@ -3726,6 +3726,13 @@ body.page .main-navigation {
   position: relative;
 }
 
+.site-branding .sticky {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
 @media only screen and (min-width: 768px) {
   .site-logo {
     margin-bottom: 3rem;
@@ -3769,13 +3776,6 @@ body.page .main-navigation {
 .site-title + .main-navigation {
   display: block;
   background-color: #FFAE1E;
-}
-
-.site-title .sticky {
-  position: fixed;
-  top: 20px;
-  width: 100%;
-  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
