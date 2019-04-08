@@ -6,11 +6,12 @@
  * @subpackage Twenty_Nineteen
  * @since 1.0.0
  */
+ $upload_dir   = wp_upload_dir();
 ?>
 <div class="site-branding">
 
 	<?php if ( has_custom_logo() ) : ?>
-		<div class="site-logo"><?php the_custom_logo(); ?></div>
+		<div class="site-logo"><img src="<?php echo $upload_dir['baseurl']?>/2019/04/logoXLautonomie.png" /></div>
 	<?php endif; ?>
 
 	<?php if ( has_nav_menu( 'menu-1' ) ) : ?>
