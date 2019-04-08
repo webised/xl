@@ -45,11 +45,9 @@
 	.entry-title {
         text-align: center;
 		margin: 0;
-		padding: 2rem 0 1.5rem 0;
-
 		a {
 			color: inherit;
-
+			font-size: 0.01rem;
 			&:hover {
 				color: $color__text-hover;
 			}
@@ -323,6 +321,9 @@
 .entry-title { 	
   background-repeat: no-repeat;
   background-position: 50% 0;
+  height: 72px;
+  padding: 3rem 0;
+  font-size: 0.1rem;
   
   .home .post-9 &{
 	 background-image: url('./img/apropos.jpg'); 
@@ -332,6 +333,7 @@
 	 background-image: url('./img/pourqui-title.jpg'); 
 	 color: $color__background-input;
 	 background-position: 0;
+	 padding: 5rem 0;
   }
   .home .post-15 &{
 	 background-image: url('./img/enpratiquetitle.jpg'); 
@@ -344,11 +346,24 @@
   .home .post-19 &{
 	 background-image: url('./img/contact.jpg'); 
 	 color: $color__green;
-	 font-size: 0.1rem;
 	 padding: 2.5rem 0;
      height: 57px;
   }   
-}  
+}  	
+.post-17.entry .entry-content{
+	.wp-image-41 {
+		margin: 0 auto;
+    }	
+	h4 {
+		font-size: 1.5rem;
+		color: #779863;
+		text-align: center;
+	}	
+	.content-text-solutions {
+		margin: 3rem auto 0 auto;
+		width: 50%;
+	}		
+}	
 .post-19 {
 	.entry-header {
 	   margin: 0;
@@ -385,10 +400,34 @@
 	&.post-11 {
 		padding: 0;
 	}
+}
+.post-15 {
+	.en-pratique-list li {
+		display:inline-block;
+		width: 24%;
+		text-align: center;
+		h4 {
+			background-repeat: no-repeat;
+			background-position: 50% 0;
+			height: 175px;
+			padding-top: 150px;
+			font-size: 1rem;
+		}
+		&:nth-child(1) h4 {
+			background-image: url('./img/icon-1.jpg');
+		}
+		&:nth-child(2) h4 {
+			background-image: url('./img/icon-2.jpg');
+		}
+		&:nth-child(3) h4 {
+			background-image: url('./img/icon-3.jpg');
+		}
+		&:nth-child(4) h4 {
+			background-image: url('./img/icon-4.jpg');
+		}
+	}	
 }	
-.en-pratique-list li {
-	display:inline-block;
-}	
+	
 .top-footer {
 	background-image: url('./img/footer.jpg');
 	background-position: 50% 0;

@@ -4,7 +4,7 @@
 
 	display: block;
 	margin-top: #{0.25 * $size__spacing-unit};
-	padding: 0.5rem 0;
+	padding: 1rem 0;
 	text-align: center;
 	background-color: $color__yellow;
 
@@ -64,10 +64,10 @@
 			> a {
 
 				font-weight: 100;
-				font-size: 1.1rem;
+				font-size: 1rem;
 				text-transform: uppercase;
 				color: $color__link;
-				margin-right: #{0.8 * $size__spacing-unit};
+				margin-right: #{2 * $size__spacing-unit};
 
 				+ svg {
 					margin-right: #{0.5 * $size__spacing-unit};

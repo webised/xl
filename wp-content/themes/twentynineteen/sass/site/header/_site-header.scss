@@ -46,7 +46,7 @@
 
 
 	@include media(tablet) {
-		margin-bottom: 0;
+		margin-bottom: 3rem;
 		text-align: center;
 	}
 
@@ -59,7 +59,6 @@
 		&:hover,
 		&:active,
 		&:focus {
-			box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);
 		}
 
 		@include media(tablet) {

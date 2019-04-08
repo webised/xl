@@ -2215,7 +2215,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   font-size: 1em;
-  line-height: 1.3;
+  line-height: 1.8;
   margin: 0;
   text-rendering: optimizeLegibility;
 }
@@ -2228,7 +2228,7 @@ textarea {
   color: #111;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 1.8;
   text-rendering: optimizeLegibility;
 }
 
@@ -2419,7 +2419,7 @@ blockquote cite {
 pre {
   font-size: 0.88889em;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  line-height: 1.3;
+  line-height: 1.8;
   overflow: auto;
 }
 
@@ -2533,7 +2533,7 @@ ol {
 }
 
 li {
-  line-height: 1.3;
+  line-height: 1.8;
 }
 
 li > ul,
@@ -2733,7 +2733,7 @@ a:focus {
 .main-navigation {
   display: block;
   margin-top: 0.25rem;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   text-align: center;
   background-color: #FFAE1E;
   /* Un-style buttons */
@@ -2803,10 +2803,10 @@ body.page .main-navigation {
 
 .main-navigation .main-menu > li > a {
   font-weight: 100;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: uppercase;
   color: #040404;
-  margin-right: 0.8rem;
+  margin-right: 2rem;
 }
 
 .main-navigation .main-menu > li > a + svg {
@@ -3734,17 +3734,13 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .site-logo {
-    margin-bottom: 0;
+    margin-bottom: 3rem;
     text-align: center;
   }
 }
 
 .site-logo .custom-logo-link .custom-logo {
   min-height: inherit;
-}
-
-.site-logo .custom-logo-link:hover, .site-logo .custom-logo-link:active, .site-logo .custom-logo-link:focus {
-  box-shadow: 0 0 0 2px black;
 }
 
 .site-title {
@@ -4155,11 +4151,11 @@ body.page .main-navigation {
 .entry .entry-title {
   text-align: center;
   margin: 0;
-  padding: 2rem 0 1.5rem 0;
 }
 
 .entry .entry-title a {
   color: inherit;
+  font-size: 0.01rem;
 }
 
 .entry .entry-title a:hover {
@@ -4473,6 +4469,9 @@ body.page .main-navigation {
 .entry-title {
   background-repeat: no-repeat;
   background-position: 50% 0;
+  height: 72px;
+  padding: 3rem 0;
+  font-size: 0.1rem;
 }
 
 .home .post-9 .entry-title {
@@ -4484,6 +4483,7 @@ body.page .main-navigation {
   background-image: url("./img/pourqui-title.jpg");
   color: #fff;
   background-position: 0;
+  padding: 5rem 0;
 }
 
 .home .post-15 .entry-title {
@@ -4499,9 +4499,23 @@ body.page .main-navigation {
 .home .post-19 .entry-title {
   background-image: url("./img/contact.jpg");
   color: #7c9a61;
-  font-size: 0.1rem;
   padding: 2.5rem 0;
   height: 57px;
+}
+
+.post-17.entry .entry-content .wp-image-41 {
+  margin: 0 auto;
+}
+
+.post-17.entry .entry-content h4 {
+  font-size: 1.5rem;
+  color: #779863;
+  text-align: center;
+}
+
+.post-17.entry .entry-content .content-text-solutions {
+  margin: 3rem auto 0 auto;
+  width: 50%;
 }
 
 .post-19 .entry-header {
@@ -4550,8 +4564,34 @@ body.page .main-navigation {
   padding: 0;
 }
 
-.en-pratique-list li {
+.post-15 .en-pratique-list li {
   display: inline-block;
+  width: 24%;
+  text-align: center;
+}
+
+.post-15 .en-pratique-list li h4 {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  height: 175px;
+  padding-top: 150px;
+  font-size: 1rem;
+}
+
+.post-15 .en-pratique-list li:nth-child(1) h4 {
+  background-image: url("./img/icon-1.jpg");
+}
+
+.post-15 .en-pratique-list li:nth-child(2) h4 {
+  background-image: url("./img/icon-2.jpg");
+}
+
+.post-15 .en-pratique-list li:nth-child(3) h4 {
+  background-image: url("./img/icon-3.jpg");
+}
+
+.post-15 .en-pratique-list li:nth-child(4) h4 {
+  background-image: url("./img/icon-4.jpg");
 }
 
 .top-footer {
