@@ -4503,12 +4503,21 @@ body.page .main-navigation {
 
 .post-17.entry .entry-content h4 {
   font-size: 1.5rem;
-  font-color: #779863;
+  color: #779863;
   text-align: center;
 }
 
 .post-17.entry .entry-content .content-text-solutions {
   margin: 3rem auto 0 auto;
+  width: 50%;
+}
+
+.post-19 .entry-content {
+  display: flex;
+  padding: 3rem 0 10rem 0;
+}
+
+.post-19 .wpcf7 {
   width: 50%;
 }
 
@@ -4524,6 +4533,10 @@ body.page .main-navigation {
 
 .post-19 .wpcf7-submit {
   background-color: #7c9a61;
+}
+
+.post-19 h5 {
+  color: #7c9a61;
 }
 
 .post-11 .entry-content {
