@@ -1,0 +1,323 @@
+// Header Main
+//--------------------------------------------------
+#header-wrap {
+	position: relative;
+	z-index: 999;
+	background-color: #fff;
+	.header-main {
+		&.h-fixed {
+			@include box-shadow(0 3px 6px rgba(0,0,0,0.05));
+		}
+		.row {
+			align-items: center;
+		}
+	}
+	.header-branding {
+		margin: 11px 15px;
+		position: relative;
+		flex-grow: 1;
+		img {
+			max-height: 25px;
+		}
+		.logo-sticky, .logo-mobile, .logo-dark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+		}
+		&.mobile {
+			display: none;
+		}
+	}
+	.hidden-sidebar-icon {
+		font-size: 27px;
+		color: #fff;
+		cursor: pointer;
+		margin-left: 50px;
+		@include transition(all 300ms linear 0ms);
+		&:hover {
+			color: $primary_color;
+		}
+		@media #{$mm-lg} {
+			margin-left: 30px;
+		}
+	}
+}
+@media #{$min-xxxl} {
+	#header-wrap {
+		&.header-layout1 #header-main > .container {
+			max-width: 100%;
+			padding: 0 100px;
+		}
+	}
+}
+@media #{$min-lg} {
+	#header-wrap {
+		&.header-layout1 #header-main {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			padding-top: 35px;
+			.header-navigation {
+				display: flex;
+				align-items: center;
+				margin-left: 15px;
+				margin-right: 15px;
+			}
+			.primary-menu > li {
+				> a {
+					&:before {
+	                    content: '';
+	                    bottom: -2px;
+	                    left: 0;
+	                    height: 3px;
+	                    background-color: $third_color ;
+	                    position: absolute;
+	                    @include transition(all 300ms linear 0ms);
+	                    width: 0;
+	                }
+				}
+				> a.current,
+	            &:hover > a {
+	                &:before {
+	                    width: 100%;
+	                }
+	            }
+			}
+			&.h-fixed {
+				.header-branding {
+					.logo-light {
+						opacity: 0;
+					}
+					.logo-sticky {
+						opacity: 1;
+					}
+				}
+				.main-navigation {
+					border: none;
+					.primary-menu > li > a {
+						line-height: 80px;
+						padding: 0;
+						&:before {
+							bottom: 0px;
+						}
+					}
+				}
+			}
+		}
+		&.header-layout2 {
+			.row {
+				flex-wrap: nowrap;
+				align-items: center;
+			}
+			.header-menu-left, .header-branding, .header-menu-right {
+				margin-left: 15px;
+				margin-right: 15px;
+			}
+			.header-menu-left, .header-menu-right {
+				width: 35%;
+				.primary-menu {
+					justify-content: space-between;
+					display: flex;
+				}
+			}
+			.header-menu-left .primary-menu > li:first-child > a {
+				padding-left: 0;
+			}
+			.header-menu-right .primary-menu > li:last-child > a {
+				padding-right: 0;
+			}
+			.header-branding {
+				width: 30%;
+				text-align: center;
+				margin: 10px 0;
+			}
+			.header-navigation {
+				width: 100%;
+				.main-navigation-inner {
+					display: flex;
+					align-items: center;
+					flex-wrap: nowrap;
+				}
+			}
+			#header-main {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				.header-branding a {
+					right: 0;
+				}
+				&:not(.h-fixed) {
+					.header-branding {
+						.logo-light {
+							opacity: 0;
+						}
+						.logo-dark {
+							opacity: 1;
+						}
+					}
+					.primary-menu > li {
+						> a {
+							line-height: 120px;
+							color: #2C3035;
+							padding: 0;
+						}
+						> a:hover,
+						> a.current {
+		                    color: $primary_color;
+		                }
+					}
+				}
+				&.h-fixed {
+					.primary-menu > li {
+						> a {
+							line-height: 80px;
+							padding: 0;
+						}
+						> a:hover,
+						> a.current {
+		                    color: $primary_color;
+		                }
+					}
+				}
+			}
+		}
+		&.header-layout3 {
+			#header-main {
+				background-color: #fff !important;
+				left: 0;
+				right: 0;
+				margin: auto;
+				&:not(.h-fixed) {
+					position: absolute;
+					top: 50px;
+					max-width: 1140px;
+					padding: 0 15px;
+				}
+				.header-branding {
+					.logo-light {
+						opacity: 0;
+					}
+					.logo-dark {
+						opacity: 1;
+					}
+				}
+				.header-navigation {
+					display: flex;
+					align-items: center;
+					margin-left: 15px;
+					margin-right: 15px;
+				}
+				.primary-menu > li {
+					> a {
+						line-height: 72px;
+						color: #2C3035;
+						padding: 0;
+					}
+					> a.current,
+		            &:hover > a {
+		                color: $primary_color;
+		            }
+				}
+				.hidden-sidebar-icon {
+					color: #2C3035;
+					&:hover {
+						color: $primary_color;
+					}
+				}
+			}
+		}
+		&.header-layout4 {
+			#header-main {
+				@include background-horizontal($primary_color, $secondary_color);
+				.header-navigation {
+					display: flex;
+					align-items: center;
+					margin-left: 15px;
+					margin-right: 15px;
+				}
+				.primary-menu > li {
+					> a {
+						line-height: 80px;
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media #{$max-md} {
+	#header-wrap {
+		&.fixed-height {
+			height: inherit !important;
+		}
+		.header-branding {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			img {
+				max-height: 22px;
+			}
+			.logo-light {
+				opacity: 0;
+			}
+			.logo-mobile {
+				opacity: 1;
+			}
+			&.mobile {
+				display: block;
+			}
+			&.desktop {
+				display: none;
+			}
+		}
+		#main-menu-mobile {
+			position: absolute;
+			top: 50%;
+			right: 15px;
+			@include transform(translate(0,-50%));
+		}
+		#header-main {
+			background-color: #0e0f1f;
+			&.h-fixed {
+				position: fixed;
+				left: 0;
+				width: 100%;
+				top: 0;
+			}
+		}
+	}
+	.admin-bar #header-main:not(.h-fixed) .header-navigation .main-navigation {
+		top: 32px;
+	}
+}
+@media screen and (max-width: 782px) {
+	.admin-bar #header-main:not(.h-fixed) .header-navigation .main-navigation {
+		top: 46px;
+	}
+}
+// Header Sticky
+//--------------------------------------------------
+#header-wrap.is-sticky #header-main, #header-wrap.is-sticky-offset #header-main {
+	@include transition(all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s);
+	&.h-fixed {
+		padding-top: 0;
+		background-color: #0E0F1F;
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		@include animation(0.95s ease 0s normal forwards 1 running headerSlideDown);
+	}
+}
+.admin-bar #header-wrap.is-sticky #header-main.h-fixed, .admin-bar #header-wrap.is-sticky-offset #header-main.h-fixed {
+	top: 32px;
+	@media screen and (max-width: 782px) {
+		top: 46px;
+	}
+	@media screen and (max-width: 600px) {
+		top: 0;
+	}
+}

@@ -1,0 +1,182 @@
+/* CMS Button */
+.btn,
+button,
+.button,
+input[type="submit"] {
+  @include background-horizontal($primary_color, $secondary_color);
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 0 32px;
+  line-height: 50px;
+  @include transition(all 300ms linear 0ms);
+  @include border-radius(50px);
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-weight: 500;
+  outline: none;
+  white-space: nowrap;
+  @include box-shadow(0 2px 10px rgba(#000, 0.36));
+  text-transform: uppercase;
+  &:hover, &:focus, &:active {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    background-image: none;
+  }
+  
+}
+.btn {
+  i {
+    @include transition(all 300ms linear 0ms);
+  }
+  &:before, &:after {
+    background-color: #fff;
+    content: "";
+    height: 100%;
+    left: -110%;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    @include transition(all 0.5s ease 0s);
+    @include transform(skewX(25deg));
+    width: 100%;
+    z-index: -1;
+  }
+  &:hover, &:focus, &:active {
+    @include background-horizontal($primary_color, $secondary_color);
+    &:before {
+      left: -10%;
+      @include transition(all 0.3s ease 0s);
+    }
+    &:after {
+      left: -20%;
+    }
+  }
+  &.size-lg {
+    line-height: 58px;
+    padding: 0 44px;
+
+  }
+  &.btn-primary {
+    background-color: $primary_color;
+    background-image: none;
+  }
+  &.btn-secondary {
+    background-color: $secondary_color;
+    background-image: none;
+  }
+  &.btn-third {
+    background-color: $third_color;
+    background-image: none;
+  }
+  &.no-shadow {
+    @include box-shadow(none);
+  }
+  &.btn-outline {
+    color: #2d3136;
+    background-color: transparent;
+    background-image: none;
+    i {
+      color: $primary_color;
+    }
+    span {
+      &:before {
+        content: '';
+        @include background-horizontal($primary_color, $secondary_color);
+        z-index: -2;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        @include border-radius(50px);
+      }
+      &:after {
+        content: '';
+        background-color: #fff;
+        z-index: -1;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        @include border-radius(50px);
+        @include transition(all 300ms linear 0ms);
+      }
+    }
+    &:hover {
+      color: #fff;
+      i {
+        color: #fff;
+      }
+      span:after {
+        background-color: transparent;
+      }
+    }
+  }
+  &.btn-shadow {
+    @include box-shadow(0px 2px 10px rgba(34, 34, 34, 0.36));
+  }
+}
+.btn-align-center {
+  text-align: center;
+}
+.btn-align-right {
+  text-align: right;
+}
+.btn-group .btn + .btn {
+  margin-left: 30px;
+}
+.btn-block {
+  display: block;
+}
+.ct-button-wrapper i {
+  margin-left: 10px;
+}
+.ct-btn-group {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.ct-button-wrapper.layout-custom {
+  .btn {
+    color: #FAFFF8;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: inherit;
+    min-height: 58px;
+    span {
+      text-transform: uppercase;
+      display: block;
+      line-height: 1;
+      text-align: left;
+    }
+    cite {
+      text-transform: none;
+      display: block;
+      line-height: 1;
+      font-size: 12px;
+      font-style: normal;
+      margin-bottom: 8px;
+    }
+    i {
+      font-size: 32px;
+      margin-left: 0;
+      margin-right: 14px;
+    }
+    &.btn-outline {
+      color: #2d3136;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
