@@ -440,6 +440,7 @@
                 easing: 'swing',
             });
         }
+		
 
         $('.primary-menu > li > .item-one-page').parent().removeClass('current-menu-item').removeClass('current_page_item');
         $('.primary-menu > li > .item-one-page').on('click', function (e) {
